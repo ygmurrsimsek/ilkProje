@@ -1,23 +1,7 @@
-import React from 'react';
-import {SafeAreaView,TouchableOpacity, Text, View ,StyleSheet} from 'react-native';
+import React from "react";
+import { StyleSheet } from "react-native";
 
-const HelloWorldApp = () => {
-  return (
-    <SafeAreaView style={style.container}>
-      <View style={style.card_container}>
-        <View style={style.card_body}>
-          <Text style={style.card_title}>John Faulder</Text>
-          <Text style={style.card_text}>Açıklama</Text>
-        </View>
-        <TouchableOpacity style={style.button}>
-          <Text style={style.button_text}>I LIKED</Text>
-          </TouchableOpacity>
-      </View>
-    </SafeAreaView>
-  );
-};
-
-const style=StyleSheet.create({
+const styles=StyleSheet.create({
   container:{
     flex:1,
     backgroundColor:'#e0e0e0',
@@ -55,7 +39,7 @@ const style=StyleSheet.create({
     lineHeight:55
   },
  button:{
-    backgroundColor:"blue",
+    backgroundColor:"#00C2FF",
     width:"100%",
     padding:10,
     borderBottomLeftRadius:10,
@@ -71,12 +55,5 @@ const style=StyleSheet.create({
   
   
 });
-export default HelloWorldApp;
 
-//*margin:10,
-//borderRadius:10,
-//padding:10,
-//flexDirection:"column",
-//borderColor:'grey',
-//borderStyle:"solid",
-//borderWidth:1,
+export default styles;
